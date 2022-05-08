@@ -11,10 +11,9 @@
 </head>
 
 <body class="bg-primary-200 text-white">
-    <!-- <script src="js/nav.js"></script> -->
 
     <header>
-        <div id="mobileNavgations" class="md:hidden text-white flex mx-5 justify-between items-center py-5">
+        <div id="mobileNavgations" class="lg:hidden text-white flex mx-5 md:mx-11 justify-between items-center py-5">
             <!-- mobile navigation -->
             <h2>logo
                 <!-- logo -->
@@ -34,13 +33,13 @@
                     <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
                   </svg>
                 </div>
-                <nav class="text-white text-center text-2xl" style="top: 25%; position: relative;">
+                <nav class="text-white text-center text-2xl" style="top:32.5%; position: relative;">
                     <div class="flex flex-col">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Portfolio</a>
-                        <a href="#">Contact</a>
+                        <li class="list-none"><a href="" class="mb-1">Home</a></li>
+                        <li class="list-none"><a href="#" class="mb-1">About</a></li>
+                        <li class="list-none"><a href="#services" class="mb-1">Services</a></li>
+                        <li class="list-none"><a href="#" class="mb-1">Portfolio</a></li>
+                        <li class="list-none"><a href="#">Contact</a></li>
                     </div>
                 </nav>
             </div>
@@ -58,16 +57,21 @@
     </header>
 
     <main class="mt-5">
-        <section id="heroSection" class="text-white mx-5 mt-14 text-center">
-            <h6 class="mb-3 flex justify-center ">HI THERE
-                <div class="mx-2"><img src="./assets/images/emoji.svg"></div> I'M</h6>
-            <h3 class="capitalize text-4xl font-bold mb-3">idorenyin Akaninyene</h3>
-            <h3 class="text-primary-100 mb-3 text-lg">Graphics designer + web developer</h3>
-            <p class="text-gray-300 mb-6">I'm a graphics designer and front end web developer based in calabar, Cross River State, Nigeria.</p>
-            <button class="bg-primary-100 font-semibold text-lg w-44 rounded h-12">Hire Me</button>
-            <!--links to contact section of the page-->
-        </section>
 
+        <section id="heroSection" class="text-white mx-5 md:mx-11 mt-14 text-center md:flex md:justify-between md:gap-3">
+            <div class="md:text-left">
+                <h6 class="mb-3 flex justify-center md:justify-start">HI THERE
+                    <div class="mx-2"><img src="./assets/images/emoji.svg"></div> I'M</h6>
+                <h3 class="capitalize text-4xl font-bold mb-3">idorenyin Akaninyene</h3>
+                <h3 class="text-primary-100 mb-3 text-lg">Graphics designer + web developer</h3>
+                <p class="text-gray-300 mb-6">I'm a graphics designer and front end web developer based in calabar, Cross River State, Nigeria.</p>
+                <button class="bg-primary-100 font-semibold text-lg w-44 rounded h-12">Hire Me</button>
+                <!--links to contact section of the page-->
+            </div>
+            <div class="hidden md:block">
+                <img src="./assets/images/Web Developer_Monochromatic.svg" alt="" class="w-910 max-w-none">
+            </div>
+        </section>
 
         <section>
             <!-- About section-->
@@ -86,12 +90,16 @@
             </div>
         </section>
 
-        <section id="" class="bg-primary-400 mt-28 py-10">
+        <section id="services" class="bg-primary-400 mt-28 py-10 md:px-11">
             <!-- services section -->
-            <div id="service-card-wrapper">
+            <div class="md:flex md:flex-col md:justify-center md:items-center md:mb-12">
                 <h3 class="text-2xl font-bold text-center mb-8">My Services</h3>
+                <div class="md:border-t-4 md:w-14 md:-mt-4 border-blue-500"></div>
+            </div>
+            <div id="service-card-wrapper " class="md:flex md:flex-wrap">
 
-                <div class="bg-primary-300 rounded-lg h-72 mx-5 mb-9 flex items-center justify-center px-5" style="border-bottom: .54rem solid rgb(227, 31, 113);">
+
+                <div class="bg-primary-300 rounded-lg h-72 mx-5 mb-9 flex items-center md:w-920 justify-center px-5" style="border-bottom: .54rem solid rgb(227, 31, 113);">
                     <div>
                         <div class="bg-deviconcolor-100 w-max p-5 rounded-full mb-4"><img src="./assets/images/brackets.svg" alt=""></div>
                         <h3 class="font-bold text-lg text-gray-300 mb-3">Web Development</h3>
@@ -100,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="bg-primary-300 rounded-lg h-72 mx-5 flex items-center justify-center px-5 mb-9" style="border-bottom: .54rem solid rgb(136, 56, 180)">
+                <div class="bg-primary-300 rounded-lg h-72 mx-5 md:w-920 flex items-center justify-center px-5 mb-9" style="border-bottom: .54rem solid rgb(136, 56, 180)">
                     <div>
                         <div class="bg-deviconcolor-200 w-max p-5 rounded-full mb-4"><img src="./assets/images/graphics.svg" alt=""></div>
                         <!-- graphics card -->
@@ -109,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="bg-primary-300 rounded-lg h-72 mx-5 flex items-center justify-center px-5 " style="border-bottom: .54rem solid #e0e016">
+                <div class="bg-primary-300 rounded-lg h-72 mx-5 md:w-920 flex items-center justify-center px-5 " style="border-bottom: .54rem solid #e0e016">
                     <div>
                         <div class="bg-deviconcolor-400 w-max p-5 rounded-full mb-4">
                             <!--<img src="./assets/images/seo.svg" class="h-12" alt="">-->
@@ -129,49 +137,54 @@
 
         </section>
 
-        <section class="pt-11  ">
+        <section class="pt-11 md:px-11 ">
             <!-- contact section -->
             <div class="text-center mx-5">
                 <h3 class="text-white text-2xl mb-3">Get In Touch</h3>
                 <p class="text-gray-300">I am available to work on your projects and bring your ideas to life. I am just a click away.</p>
-                <div class="mt-8">
-                    <div class="mb-10">
+                <div class="md:flex md:justify-center">
+                    <div class="mt-8 md:mt-10 md:flex md:gap-28">
+                        <div class="mb-10">
 
-                        <div class="flex justify-center items-center mb-2">
-                            <div class="bg-deviconcolor-100 p-5 rounded-full w-max ">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="58" width="58" fill="#c5325c" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>
+                            <div class="flex justify-center items-center mb-2">
+                                <div class="bg-deviconcolor-100 p-5 rounded-full w-max ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="58" width="58" fill="#c5325c" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>
+                                </div>
                             </div>
+                            <p class="text-gray-300">148 Goldie Street, Calabar</p>
+
                         </div>
-                        <p class="text-gray-300">148 Goldie Street, Calabar</p>
 
-                    </div>
-
-                    <div class="mb-10">
-                        <div class="flex justify-center items-center mb-2">
-                            <div class="bg-deviconcolor-200 w-max p-5 rounded-full"><svg fill="#7933b1" xmlns="http://www.w3.org/2000/svg" height="58" width="58" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M18.92 351.2l108.5-46.52c12.78-5.531 27.77-1.801 36.45 8.98l44.09 53.82c69.25-34 125.5-90.31 159.5-159.5l-53.81-44.04c-10.75-8.781-14.41-23.69-8.974-36.47l46.51-108.5c6.094-13.91 21.1-21.52 35.79-18.11l100.8 23.25c14.25 3.25 24.22 15.8 24.22 30.46c0 252.3-205.2 457.5-457.5 457.5c-14.67 0-27.18-9.968-30.45-24.22l-23.25-100.8C-2.571 372.4 5.018 357.2 18.92 351.2z"/></svg></div>
-                        </div>
-                        <p class="text-gray-300">+2349154455472</p>
-                    </div>
-
-                    <div class="mb-10">
-                        <div class="flex justify-center items-center mb-2">
-                            <div class="bg-deviconcolor-400 w-max p-5 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="#e0e016" height="58" width="58" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                        <div class="mb-10">
+                            <div class="flex justify-center items-center mb-2">
+                                <div class="bg-deviconcolor-200 w-max p-5 rounded-full"><svg fill="#7933b1" xmlns="http://www.w3.org/2000/svg" height="58" width="58" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M18.92 351.2l108.5-46.52c12.78-5.531 27.77-1.801 36.45 8.98l44.09 53.82c69.25-34 125.5-90.31 159.5-159.5l-53.81-44.04c-10.75-8.781-14.41-23.69-8.974-36.47l46.51-108.5c6.094-13.91 21.1-21.52 35.79-18.11l100.8 23.25c14.25 3.25 24.22 15.8 24.22 30.46c0 252.3-205.2 457.5-457.5 457.5c-14.67 0-27.18-9.968-30.45-24.22l-23.25-100.8C-2.571 372.4 5.018 357.2 18.92 351.2z"/></svg></div>
                             </div>
+                            <p class="text-gray-300">+2349154455472</p>
                         </div>
-                        <p class="text-gray-300">drenoaka2003@gmail.com</p>
+
+                        <div class="mb-10">
+                            <div class="flex justify-center items-center mb-2">
+                                <div class="bg-deviconcolor-400 w-max p-5 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="#e0e016" height="58" width="58" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
+                                </div>
+                            </div>
+                            <p class="text-gray-300">drenoaka2003@gmail.com</p>
+
+                        </div>
 
                     </div>
-
                 </div>
             </div>
 
             <div id="contact-form" class="pb-16">
+                <!-- contact form section -->
                 <div class="mx-5">
                     <form action="" class="flex justify-center flex-col">
-                        <input type="text" class="mb-3 h-6 py-5 text-gray-500 rounded outline-none px-3" name="name" placeholder="Name or Company Name" id="" required>
-                        <input type="tel" class="mb-3 h-6 py-5 text-gray-500 rounded outline-none px-3" name="tel" placeholder="Phone Number" id="" required>
-                        <input type="email" class="mb-3 h-6 py-5 text-gray-500 rounded outline-none px-3" name="email" placeholder="Email" required>
-                        <textarea name="message" class="mb-5 h-60 py-5 text-gray-500 rounded outline-none px-3" id="" cols="30" rows="10" required placeholder="Your message"></textarea>
+                        <input type="text" class="mb-3 h-6 py-5 text-gray-500 rounded outline-none px-3 focus:border-2 focus:border-blue-500" name="name" placeholder="Name or Company Name" id="" required>
+                        <div class="flex-col md:flex-row flex justify-between">
+                            <input type="tel" class="mb-3 h-6 py-5 md:w-930 text-gray-500 rounded outline-none focus:border-2 focus:border-blue-500 px-3" name="tel" placeholder="Phone Number" id="" required>
+                            <input type="email" class="mb-3 h-6 py-5 md:w-930 text-gray-500 rounded outline-none px-3 focus:border-2 focus:border-blue-500" name="email" placeholder="Email" required>
+                        </div>
+                        <textarea name="message" class="mb-5 h-60 py-5 text-gray-500 rounded outline-none focus:border-2 focus:border-blue-500 px-3" id="" cols="30" rows="10" required placeholder="Your message"></textarea>
                         <button type="submit" class="bg-primary-100 py-5 cursor-pointer text-white flex rounded  justify-center items-center h-6">Send Message</button>
                     </form>
                 </div>
@@ -179,9 +192,9 @@
         </section>
 
     </main>
-    <footer class="bg-primary-400 flex justify-center items-center">
-        <div class="flex flex-col items-center py-6">
-            <div class="flex mb-3 gap-3">
+    <footer class="bg-primary-400 flex  md:block md:px-11 justify-center items-center">
+        <div class="flex flex-col items-center py-6 md:flex-row-reverse md:justify-between">
+            <div class="flex mb-3 gap-3 md:mb-0">
                 <!-- social  img -->
                 <div>
                     <!--facebook icon-->

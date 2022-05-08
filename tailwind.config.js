@@ -17,8 +17,20 @@ module.exports = {
                 },
                 'navbg': {
                     100: '#011e2bd1'
-                }
+                },
+            },
+
+            'width': {
+                '910': '21.8rem',
+                '920': '44%',
+                '930': '49%',
+
+            },
+
+            'borderColor': {
+                'primary': '#0FA5E9',
             }
+
         },
     },
     plugins: [],
