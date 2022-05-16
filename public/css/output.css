@@ -721,11 +721,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.25rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -736,6 +731,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.25rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -744,6 +744,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .pt-11 {
@@ -814,6 +822,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
+/* npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch */
 
 .focus\:bg-blue-100:focus {
   --tw-bg-opacity: 1;
@@ -898,10 +908,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 1.5rem;
   }
 
-  .md\:gap-28 {
-    gap: 7rem;
-  }
-
   .md\:border-t-4 {
     border-top-width: 4px;
   }
@@ -922,16 +928,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
-  .lg\:mt-14 {
-    margin-top: 3.5rem;
-  }
-
   .lg\:mt-0 {
     margin-top: 0px;
-  }
-
-  .lg\:mb-8 {
-    margin-bottom: 2rem;
   }
 
   .lg\:flex {
@@ -950,10 +948,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 27.6%;
   }
 
-  .lg\:items-center {
-    align-items: center;
-  }
-
   .lg\:justify-between {
     justify-content: space-between;
   }
@@ -970,11 +964,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 0px;
   }
 
-  .lg\:px-11 {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
-  }
-
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -982,18 +971,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1230px) {
-  .\34lg\:mx-16 {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-
   .\34lg\:gap-8 {
     gap: 2rem;
-  }
-
-  .\34lg\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .\34lg\:px-16 {
@@ -1006,13 +985,43 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 2.5rem;
   }
 
+  .\34lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .\34lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+}
 
-  .\34lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+@media (min-width: 900px) {
+  .\35lg\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .\35lg\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .\35lg\:flex {
+    display: flex;
+  }
+
+  .\35lg\:items-center {
+    align-items: center;
+  }
+
+  .\35lg\:justify-between {
+    justify-content: space-between;
+  }
+
+  .\35lg\:gap-36 {
+    gap: 9rem;
+  }
+
+  .\35lg\:gap-4 {
+    gap: 1rem;
   }
 }
