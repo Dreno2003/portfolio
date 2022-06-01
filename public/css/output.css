@@ -518,12 +518,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .mb-9 {
@@ -540,10 +544,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .mb-5 {
@@ -664,6 +664,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.75rem;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -754,6 +758,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0px;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .pt-11 {
   padding-top: 2.75rem;
 }
@@ -779,6 +787,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-\[17px\] {
+  font-size: 17px;
 }
 
 .font-bold {
@@ -872,6 +884,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 49%;
   }
 
+  .md\:max-w-none {
+    max-width: none;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -906,6 +922,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:gap-14 {
+    gap: 3.5rem;
+  }
+
+  .md\:gap-32 {
+    gap: 8rem;
   }
 
   .md\:border-t-4 {
@@ -948,6 +972,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 27.6%;
   }
 
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
   }
@@ -967,6 +995,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:w-96 {
+    width: 24rem;
   }
 }
 
@@ -1009,6 +1043,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: flex;
   }
 
+  .\35lg\:flex-col {
+    flex-direction: column;
+  }
+
   .\35lg\:items-center {
     align-items: center;
   }
@@ -1023,5 +1061,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .\35lg\:gap-4 {
     gap: 1rem;
+  }
+
+  .\35lg\:gap-0 {
+    gap: 0px;
+  }
+}
+
+@media (min-width: 820px) {
+  .\36lg\:w-72 {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 1240px) {
+  .\37lg\:w-96 {
+    width: 24rem;
+  }
+
+  .\37lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }

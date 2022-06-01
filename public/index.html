@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="icon" href="./assets/images/ai.png"> -->
-    <link rel="stylesheet" href="./css/output.css">
+    <!-- <link rel="icon" href="./assets/images/favicon.ico"> -->
     <!-- include wow js for animation -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="./css/output.css">
+
 </head>
 
-<body class="bg-primary-200 text-white">
+<body class="bg-primary-200 text-white ">
 
     <header class="md:mx-11 4lg:px-16">
         <div id="mobileNavgations" class="lg:hidden text-white flex mx-5  justify-between items-center pt-5 pb-0">
             <!-- mobile navigation -->
 
             <!-- logo -->
-            <!-- <h2>logo</h2> -->
-            <img src="./assets/images/Web Developer_Outline.svg" width="80" alt="">
+            <a href="https://iao.netlify.app/"> <img src="./assets/images/Web Developer_Outline.svg" width="80" alt=""></a>
 
             <div class="navIcon " id="openBtn" onclick="openModal()">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -27,7 +32,6 @@
           </svg>
             </div>
         </div>
-
 
         <div id="navContent" class="hidden lg:hidden h-full z-10 fixed top-0 left-0 w-0 ">
             <div class="fixed w-full h-full text-center bg-navbg-100">
@@ -41,8 +45,8 @@
                         <li class="list-none"><a href="" class="mb-1">Home</a></li>
                         <li class="list-none"><a href="#" class="mb-1">About</a></li>
                         <li class="list-none"><a href="#services" class="mb-1">Services</a></li>
-                        <li class="list-none"><a href="#" class="mb-1">Portfolio</a></li>
-                        <li class="list-none"><a href="#">Contact</a></li>
+                        <li class="list-none"><a href="#" class="mb-1" disable>Portfolio</a></li>
+                        <li class="list-none"><a href="#contact">Contact</a></li>
                     </div>
                 </nav>
             </div>
@@ -50,13 +54,13 @@
 
         <div class="hidden lg:flex lg:py-8 lg:justify-between items-center 4lg:py-10">
             <!-- desktop navigation view -->
-            <img src="./assets/images/Web Developer_Outline.svg" width="80" alt="">
+            <a href="https://iao.netlify.app/"><img src="./assets/images/Web Developer_Outline.svg" width="80" alt=""></a>
             <nav class="text-white lg:flex lg:gap-4 4lg:gap-8  font-bold">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
+                <a href="">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
                 <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
@@ -71,7 +75,7 @@
                     <h3 class="capitalize text-4xl font-bold mb-3">idorenyin Akaninyene</h3>
                     <h3 class="text-primary-100 mb-3 text-lg">Graphics designer + web developer</h3>
                     <p class="text-gray-300 mb-6 4lg:text-lg">I'm a graphics designer and front end web developer based in calabar, Cross River State, Nigeria.</p>
-                    <button class="bg-primary-100 font-semibold text-lg w-44 rounded h-12">Hire Me</button>
+                    <a href="#about"><button class="bg-primary-100 font-semibold text-lg w-44 rounded h-12">Learn More</button></a>
                     <!--links to contact section of the page-->
                 </div>
                 <div class="hidden md:block">
@@ -80,20 +84,23 @@
             </div>
         </section>
 
-        <section>
-            <!-- About section-->
-            <div>
-                <!-- image of about-->
-            </div>
-
-            <!-- <div>
-                <h3>About Me</h3>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, recusandae ipsam. Exercitationem voluptate officiis vel dicta et, veritatis provident blanditiis excepturi? Vero voluptatibus obcaecati quia corrupti odio provident quibusdam quis.
-                    </p>
+        <section class='text-center mx-5 pt-16' id="about">
+            <div class="flex justify-center items-center flex-col md:flex-row md:justify-between xl:justify-aroun md:mx-11 md:gap-14">
+                <!-- About section-->
+                <div class="mb-8 ">
+                    <img src="./assets/images/img-dre.jpg" class="w-910 lg:w-950 md:max-w-none" alt="profile image">
                 </div>
-            -->
+
+                <div>
+                    <h3 class="text-2xl font-bold text-center mb-6 4lg:text-3xl">About Me</h3>
+                    <div>
+                        <div class="7lg:text-lg 7lg:w-96 6lg:w-72 text-[17px] ">
+                            <p class="mb-2">I’m Idorenyin Akaninyene, a talented Graphics Designer, and front end developer. I am passionate about giving solutions to challenging problems and create delightful experiences.
+                                <p class="mb-2">I honed my skills at web development, Graphics Design and SEO analytics. I develop websites with HTML, CSS and JavaScript, with proficiency in <b>vuejs</b> and <b>tailwindcss</b>.</p>
+                                <p>Being a diligent, hardworking and result oriented Individual, I always work towards achieving best result on each project I lay my hands on.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -145,7 +152,7 @@
 
         </section>
 
-        <section class="pt-11 md:px-11 4lg:px-16">
+        <section class="pt-11 md:px-11 4lg:px-16" id="contact">
             <!-- contact section -->
 
             <div class="text-center mx-5">
@@ -153,7 +160,7 @@
                 <p class="text-gray-300 4lg:text-lg">I am available to work on your projects and bring your ideas to life. I am just a click away.</p>
                 <div class="5lg:flex 5lg:justify-between 5lg:items-center 5lg:mt-14">
                     <div class="md:flex md:justify-center">
-                        <div class="mt-8 md:mt-10 lg:mt-0 md:flex  lg:gap-0 md:flex-col">
+                        <div class="mt-8 md:mt-10 lg:mt-0 md:flex md:gap-32 5lg:gap-0 md:flex-row 5lg:flex-col">
                             <div class="mb-10 5lg:flex 5lg:items-center 5lg:gap-4">
 
                                 <div class="flex justify-center items-center mb-2">
@@ -185,17 +192,17 @@
                     </div>
 
 
-                    <div id="contact-form" class="pb-16">
+                    <div id="contact-form contact" class="pb-16">
                         <!-- contact form section -->
                         <div class="mx-5">
-                            <form target="_blank" action="https://formsubmit.co/3e8c65f26b8aa7256e4701e3edc5a831" method="POST" class="flex justify-center flex-col">
-                                <input type="text" class="mb-3 h-6 py-5 text-gray-500 rounded outline-none px-3 focus:bg-blue-100" name="name" placeholder="Name or Company Name" id="" required>
+                            <form target="_blank" id="my_form" action="https://formspree.io/f/xrgjjydz" method="POST" class="flex justify-center flex-col">
+                                <input type="text" id="name" name="name" class="mb-3 h-6 py-5 text-gray-500 rounded outline-none px-3 focus:bg-blue-100" name="name" placeholder="Name or Company Name" id="" required>
                                 <div class="flex-col md:flex-row flex justify-between">
-                                    <input type="tel" autocomplete=" off " class="mb-3 box-border h-6 py-5 md:w-930  text-gray-500 rounded outline-none focus:bg-blue-100 px-3" name="tel" placeholder="Phone Number" id="" required>
-                                    <input type="email" class="mb-3 h-6 py-5 md:w-930 text-gray-500 rounded outline-none px-3 focus:bg-blue-100" name="email" placeholder="Email" required>
+                                    <input type="tel" name="phone" autocomplete=" off " id="tel" class="mb-3 box-border h-6 py-5 md:w-930  text-gray-500 rounded outline-none focus:bg-blue-100 px-3" name="tel" placeholder="Phone Number" id="" required>
+                                    <input type="email" name="email" id="mail" class="mb-3 h-6 py-5 md:w-930 text-gray-500 rounded outline-none px-3 focus:bg-blue-100" name="email" placeholder="Email" required>
                                 </div>
-                                <textarea name="message" class="mb-5 h-60 py-5 text-gray-500 rounded outline-none focus:bg-blue-100 px-3" id="" cols="30" rows="10" required placeholder="Your message"></textarea>
-                                <button type="submit" class="bg-primary-100 py-5 cursor-pointer text-white flex rounded  justify-center items-center h-6">Send Message</button>
+                                <textarea name="message" name="message" id="message" class="mb-5 h-60 py-5 text-gray-500 rounded outline-none focus:bg-blue-100 px-3" id="" cols="30" rows="10" required placeholder="Your message"></textarea>
+                                <button type="submit" id='btn' class="bg-primary-100 py-5 cursor-pointer text-white flex rounded  justify-center items-center h-6">Send Message</button>
                             </form>
                         </div>
                     </div>
@@ -230,6 +237,8 @@
         var btn = document.getElementById("openBtn"); //btn to open modal
         var navContents = document.getElementById("navContent"); //navigation content
         var closeBtn = document.getElementById("closeBtn");
+        const submitBtn = document.getElementById("btn");
+        const contactForm = document.getElementById('my_form');
 
         btn.onclick = function openModal() {
             navContents.style.display = 'block';
@@ -244,6 +253,14 @@
             closeBtn.style.display = 'none';
             btn.style.display = 'block';
         }
+
+        //code for prevention of page refresh after form submission and clearing of input fields after submission
+        contactForm.addEventListener('submit', function handleSubmit(event) {
+            contactForm.submit(); //submits the form 
+            contactForm.reset(); // reset the form after submission has been made
+            // const name = document.getElementById('name')
+
+        })
     </script>
 </body>
 

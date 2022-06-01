@@ -35,8 +35,18 @@ module.exports = {
 
             screens: {
                 '4lg': '1230px',
-                '5lg': '900px'
+                '5lg': '900px',
+                '6lg': '820px',
+                '7lg': '1240px'
             },
+
+            fontSize: {
+                // sm: ['14px', '20px'],
+                // base: ['16px', '24px'],
+                // lg: ['20px', '28px'],
+                // xl: ['24px', '32px'],
+
+            }
 
         },
     },
