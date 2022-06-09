@@ -54,9 +54,9 @@
                 <nav class="text-white text-center text-2xl" style="top:32.5%; position: relative;">
                     <div class="flex flex-col">
                         <li class="list-none"><a href="" class="mb-1">Home</a></li>
-                        <li class="list-none"><a href="#" class="mb-1">About</a></li>
+                        <li class="list-none"><a href="#about" class="mb-1">About</a></li>
                         <li class="list-none"><a href="#services" class="mb-1">Services</a></li>
-                        <li class="list-none"><a href="#" class="mb-1" disable>Portfolio</a></li>
+                        <li class="list-none"><a href="#portfolio" class="mb-1">Portfolio</a></li>
                         <li class="list-none"><a href="#contact">Contact</a></li>
                     </div>
                 </nav>
@@ -70,7 +70,7 @@
                 <a href="">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
-                <a href="#">Portfolio</a>
+                <a href="#portfolio">Portfolio</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -78,7 +78,7 @@
 
     <main class="">
 
-        <section id="heroSection" style="height:31.5em;" class="text-white flex justify-center items-center ">
+        <section id="heroSection" style="height:33.3em;" class="text-white flex justify-center items-center ">
             <div class="  mx-5 md:mx-11 mtp-14 text-center 4lg:px-16 md:flex md:justify-between md:gap-6  5lg:gap-36 lg:gap-44">
                 <div class="md:text-left">
                     <h6 class="mb-3 flex justify-center md:justify-start">HI THERE
@@ -86,7 +86,7 @@
                     <h3 class="capitalize text-4xl font-bold mb-3">idorenyin Akaninyene</h3>
                     <h3 class="text-primary-100 mb-3 text-lg">Graphics designer + web developer</h3>
                     <p class="text-gray-300 mb-6 4lg:text-lg">I'm a graphics designer and front end web developer based in calabar, Cross River State, Nigeria.</p>
-                    <a href="#about"><button class="bg-primary-100 font-semibold text-lg w-44 rounded h-12">Learn More</button></a>
+                    <a href="#about"><button class="animate-bounce hover:animate-none bg-primary-100 font-semibold text-lg w-44 rounded h-12 hover:bg-blue-500">Learn More</button></a>
                     <!--links to contact section of the page-->
                 </div>
                 <div class="hidden md:block">
@@ -122,7 +122,7 @@
                 <div class="md:border-t-4 md:w-14 md:-mt-4 border-blue-500"></div>
             </div>
             <div class="md:flex md:justify-center">
-                <div id="service-card-wrapper " class="animate__animated animate__bounce animate__delay-2s  md:flex md:flex-wrap md:justify-between">
+                <div id="service-card-wrapper " class="md:flex md:flex-wrap md:justify-between">
 
                     <div class="bg-primary-300 rounded-lg h-72 mx-5 mb-9 flex items-center md:w-920  lg:w-940 justify-center px-5" style="border-bottom: .54rem solid rgb(227, 31, 113);">
                         <div>
@@ -158,9 +158,23 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="portfolio">
             <!-- portfolio section -->
+            <div class="pt-12 md:flex md:flex-col md:justify-center md:items-center md:mb-12">
+                <h3 class="text-2xl font-bold text-center mb-2 4lg:text-3xl">
+                    My Projects
+                </h3>
+                <h4 class="text-center text-gray-300">Here are some projects I have worked on. </h4>
+                <!-- <div class="md:border-t-4 md:w-14 md:-mt-4 border-blue-500"></div> -->
+            </div>
+            <!-- <div class=""> -->
+            <div class="mx-5 4lg:px-16 md:px-11 mt-14  md:flex md:gap-10">
 
+                <a href="https://blogrt.netlify.app/" target="_blank"><img src="./assets/images/projectsimages/blorg.png" alt="" class="h-52 rounded-lg mb-10 8lg:w-960 8lg:h-889"></a>
+
+                <a href="https://easybankmentor.netlify.app/"><img src="./assets/images/projectsimages/easyproject.png" alt="" class="h-52 rounded-lg mb-10 8lg:w-960 8lg:h-889 md:"></a>
+            </div>
+            <!-- </div> -->
         </section>
 
         <section class="pt-11 md:px-11 4lg:px-16" id="contact">
@@ -190,7 +204,7 @@
                                 <p class="text-gray-300">+2349154455472</p>
                             </div>
 
-                            <div class="mb-10 5lg:flex 5lg:items-center 5lg:gap-4">
+                            <div class="mb-10 5lg:flex 5lg:items-center 5lg:gap-4 ">
                                 <div class="flex justify-center items-center mb-2">
                                     <div class="bg-deviconcolor-400 w-max p-5 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="#e0e016" class="h-10 w-10" height="58" width="58" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"/></svg>
                                     </div>
@@ -213,7 +227,7 @@
                                     <input type="email" name="email" id="mail" class="mb-3 h-6 py-5 md:w-930 text-gray-500 rounded outline-none px-3 focus:bg-blue-100" name="email" placeholder="Email" required>
                                 </div>
                                 <textarea name="message" name="message" id="message" class="mb-5 h-60 py-5 text-gray-500 rounded outline-none focus:bg-blue-100 px-3" id="" cols="30" rows="10" required placeholder="Your message"></textarea>
-                                <button type="submit" id='btn' class="bg-primary-100 py-5 cursor-pointer text-white flex rounded  justify-center items-center h-6">Send Message</button>
+                                <button type="submit" id='btn' class="bg-primary-100 hover:bg-blue-500  py-5 cursor-pointer text-white flex rounded  justify-center items-center h-6">Send Message</button>
                             </form>
                         </div>
                     </div>
